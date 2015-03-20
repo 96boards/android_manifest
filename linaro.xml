@@ -9,6 +9,7 @@
   <!-- Linaro Device Configs -->
   <project path="device/linaro/hikey" name="android_device_linaro_hikey" revision="android-5.0" remote="github" groups="device,hikey" />
   <project path="device/linaro/build" name="device/linaro/common" revision="linaro-lollipop-experimental" remote="linaro-android" groups="default" />
+  <project path="android-patchsets" name="android-patchsets" revision="master" remote="linaro-android" groups="default" />
 
   <!-- Linaro Kernels -->
   <project path="kernel/linaro/hisilicon" name="linux" revision="hikey" remote="github" groups="default" />
