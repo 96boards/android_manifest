@@ -2,8 +2,18 @@
 <manifest>
   <!-- Repositories -->
   <!-- Linaro Repositories -->
-  <remove-project name="platform/external/wpa_supplicant_8" /> 
-  <remote name="linaro-android" fetch="git://android.git.linaro.org/" review="review.android.git.linaro.org" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <remove-project name="platform/packages/wallpapers/Galaxy4" />
+  <remove-project name="platform/packages/wallpapers/HoloSpiral" />
+  <remove-project name="platform/packages/wallpapers/MusicVisualization" />
+  <remove-project name="platform/packages/wallpapers/NoiseField" />
+  <remove-project name="platform/packages/wallpapers/PhaseBeam" />
+
+
+  <remote name="linaro-android"
+          fetch="git://android.git.linaro.org/"
+          review="review.android.git.linaro.org" />
+
   <remote name="github" fetch="http://github.com/96boards" />
   <remote name="linaro-other" fetch="git://git.linaro.org/" />
   <!-- Linaro Device Configs -->
@@ -13,7 +23,14 @@
 
   <!-- Linaro Kernels -->
   <project path="kernel/linaro/hisilicon" name="linux" revision="hikey" remote="github" groups="default" />
+
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" revision="android-5.0" remote="github" groups="device,hikey" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="android-5.0" remote="github" groups="device,hikey" />
+
+  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" revision="master" />
+  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" revision="master" />
+  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" revision="master" />
+  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" revision="master" />
+  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" revision="master" />
 
 </manifest>
