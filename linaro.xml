@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- Repositories -->
-  <!-- Linaro Repositories -->
-  <remove-project name="platform/external/wpa_supplicant_8" />
-  <remove-project name="platform/packages/wallpapers/Galaxy4" />
-  <remove-project name="platform/packages/wallpapers/HoloSpiral" />
-  <remove-project name="platform/packages/wallpapers/MusicVisualization" />
-  <remove-project name="platform/packages/wallpapers/NoiseField" />
-  <remove-project name="platform/packages/wallpapers/PhaseBeam" />
-
 
   <remote name="linaro-android"
           fetch="git://android.git.linaro.org/"
@@ -17,21 +9,14 @@
   <remote name="github" fetch="http://github.com/96boards" />
   <remote name="linaro-other" fetch="git://git.linaro.org/" />
   <!-- Linaro Device Configs -->
-  <project path="device/linaro/hikey" name="android_device_linaro_hikey" revision="android-5.0" remote="github" groups="device,hikey" />
-  <project path="device/linaro/build" name="device/linaro/common" revision="linaro-lollipop-experimental" remote="linaro-android" groups="default" />
-  <project path="android-patchsets" name="android-patchsets" revision="master" remote="linaro-android" groups="default" />
+  <project path="device/linaro/hikey" name="android_device_linaro_hikey" revision="android-marshmallow-dev" remote="github" groups="device,hikey" />
+  <project path="device/linaro/build" name="device/linaro/common" revision="linaro-marshmallow" remote="linaro-android" groups="default" />
 
   <!-- Linaro Kernels -->
-  <project path="kernel/linaro/hisilicon" name="linux" revision="hikey" remote="github" groups="default" />
+  <project path="kernel/linaro/hisilicon" name="people/vishal.bhoj/hikey-aosp-3.18-rebase" revision="android-3.18" remote="linaro-other" groups="default" />
 
-  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" revision="android-5.0" remote="github" groups="device,hikey" />
-  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="android-5.0" remote="github" groups="device,hikey" />
+  <!-- project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" revision="android-5.0" remote="github" groups="device,hikey" />
+  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="android-5.0" remote="github" groups="device,hikey" /-->
   <project path="packages/apps/UsbSpeedSwitch" name="android_packages_apps_UsbSpeedSwitch" revision="master" remote="github" groups="device,hikey" />
-
-  <project path="packages/wallpapers/Galaxy4" name="platform/packages/wallpapers/Galaxy4" revision="master" />
-  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" revision="master" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" revision="master" />
-  <project path="packages/wallpapers/NoiseField" name="platform/packages/wallpapers/NoiseField" revision="master" />
-  <project path="packages/wallpapers/PhaseBeam" name="platform/packages/wallpapers/PhaseBeam" revision="master" />
 
 </manifest>
