@@ -13,9 +13,7 @@
   <project path="device/linaro/build" name="device/linaro/common" revision="linaro-marshmallow" remote="linaro-android" groups="default" />
 
   <!-- Linaro Kernels -->
-  <project path="kernel/linaro/hisilicon" name="people/vishal.bhoj/hikey-aosp-3.18-rebase" revision="android-3.18" remote="linaro-other" groups="default" />
-
-  <!-- project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" revision="android-5.0" remote="github" groups="device,hikey" /-->
+  <project path="kernel/linaro/hisilicon" name="linux" revision="aosp-3.18" remote="github" groups="default" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="marshmallow-dev" remote="github" groups="device,hikey" />
   <project path="packages/apps/UsbSpeedSwitch" name="android_packages_apps_UsbSpeedSwitch" revision="master" remote="github" groups="device,hikey" />
 
