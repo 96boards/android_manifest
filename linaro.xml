@@ -8,13 +8,38 @@
 
   <remote name="github" fetch="http://github.com/96boards" />
   <remote name="linaro-other" fetch="git://git.linaro.org/" />
+  <remote name="rsalveti" fetch="http://github.com/rsalveti" />
+  <remote name="robh" fetch="http://github.com/robherring" />
+  <remote name="freedesktop" fetch="git://anongit.freedesktop.org/" />
+  <remote name="x86" fetch="git://gitscm.sf.net/gitroot/android-x86/" />
+
   <!-- Linaro Device Configs -->
   <project path="device/linaro/hikey" name="android_device_linaro_hikey" revision="marshmallow-dev" remote="github" groups="device,hikey" />
+  <project path="device/linaro/db410c" name="android_device_linaro_db410c" revision="marshmallow-dev" remote="github" groups="device,db410c" />
   <project path="device/linaro/build" name="device/linaro/common" revision="linaro-marshmallow" remote="linaro-android" groups="default" />
 
   <!-- Linaro Kernels -->
   <project path="kernel/linaro/hisilicon" name="linux" revision="android-hikey-linaro-4.1" remote="github" groups="default" />
+  <project path="kernel/linaro/qcom" name="linux" revision="qcomlt-4.3" remote="rsalveti" groups="default" />
   <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="marshmallow-dev" remote="github" groups="device,hikey" />
   <project path="packages/apps/UsbSpeedSwitch" name="android_packages_apps_UsbSpeedSwitch" revision="master" remote="github" groups="device,hikey" />
+
+  <!-- Extras -->
+
+  <project path="external/libpciaccess" name="platform/external/libpciaccess" remote="x86" revision="marshmallow-x86" />
+
+  <!-- Mesa -->
+
+  <remove-project path="external/mesa3d" name="platform/external/mesa3d" />
+  <project path="external/mesa3d" name="mesa" revision="android-m" remote="robh" groups="default" />
+
+  <remove-project path="external/drm_gralloc" name="platform/external/drm_gralloc" />
+  <project path="external/drm_gralloc" name="drm_gralloc" revision="android-m" remote="robh" groups="default" />
+
+  <remove-project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" />
+  <project path="external/drm_hwcomposer" name="drm_hwcomposer" revision="android-m" remote="robh" groups="default" />
+
+  <remove-project path="external/libdrm" name="platform/external/libdrm" />
+  <project path="external/libdrm" name="mesa/drm" revision="master" remote="freedesktop" groups="default" />
 
 </manifest>
