@@ -12,6 +12,7 @@
   <remote name="robh" fetch="http://github.com/robherring" />
   <remote name="freedesktop" fetch="git://anongit.freedesktop.org/" />
   <remote name="x86" fetch="git://gitscm.sf.net/gitroot/android-x86/" />
+  <remote name="codeaurora" fetch="git://codeaurora.org/quic/" />
 
   <!-- Linaro Device Configs -->
   <project path="device/linaro/hikey" name="android_device_linaro_hikey" revision="marshmallow-dev" remote="github" groups="device,hikey" />
@@ -27,6 +28,7 @@
   <!-- Extras -->
 
   <project path="external/libpciaccess" name="platform/external/libpciaccess" remote="x86" revision="marshmallow-x86" />
+  <project path="external/skales" name="kernel/skales" remote="codeaurora" revision="master" />
 
   <!-- Mesa -->
 
