@@ -44,4 +44,8 @@
   <remove-project path="external/libdrm" name="platform/external/libdrm" />
   <project path="external/libdrm" name="mesa/drm" revision="master" remote="freedesktop" groups="default" />
 
+  <!-- Fixes -->
+  <remove-project path="frameworks/base" name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" revision="marshmallow-dev" remote="github" groups="default" />
+
 </manifest>
