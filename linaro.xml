@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Repositories -->
-
-  <remote name="linaro-android"
-          fetch="git://android.git.linaro.org/"
-          review="review.android.git.linaro.org" />
-
   <remote name="github" fetch="http://github.com/96boards" />
-  <remote name="linaro-other" fetch="git://git.linaro.org/" />
-  <!-- Linaro Device Configs -->
-  <project path="device/linaro/hikey" name="android_device_linaro_hikey" revision="marshmallow-dev" remote="github" groups="device,hikey" />
-  <project path="device/linaro/build" name="device/linaro/common" revision="linaro-marshmallow" remote="linaro-android" groups="default" />
+  <!-- Repositories -->
+  <remove-project path="system/bt" name="platform/system/bt" />
+  <project path="system/bt" name="android_system_bt" revision="marshmallow-dev" remote="github" groups="default"  />
 
-  <!-- Linaro Kernels -->
-  <project path="kernel/linaro/hisilicon" name="linux" revision="android-hikey-linaro-4.1" remote="github" groups="default" />
-  <project path="hardware/ti/wpan" name="android_hardware_ti_wpan" revision="marshmallow-dev" remote="github" groups="device,hikey" />
-  <project path="packages/apps/UsbSpeedSwitch" name="android_packages_apps_UsbSpeedSwitch" revision="master" remote="github" groups="device,hikey" />
+  <project path="device/linaro/hikey" name="device/linaro/hikey" revision="master" groups="device,hikey" />
+  <project path="device/linaro/hikey-kernel" name="device/linaro/hikey-kernel" revision="master" groups="device,hikey" />
 
 </manifest>
