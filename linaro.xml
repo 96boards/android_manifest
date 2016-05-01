@@ -36,16 +36,12 @@
   <project path="external/mesa3d" name="mesa" revision="android-m" remote="robh" groups="default" />
 
   <remove-project path="external/drm_gralloc" name="platform/external/drm_gralloc" />
-  <project path="external/drm_gralloc" name="drm_gralloc" revision="android-m" remote="robh" groups="default" />
+  <project path="external/drm_gralloc" name="gbm_gralloc" revision="master" remote="robh" groups="default" />
 
   <remove-project path="external/drm_hwcomposer" name="platform/external/drm_hwcomposer" />
   <project path="external/drm_hwcomposer" name="drm_hwcomposer" revision="android-m" remote="robh" groups="default" />
 
   <remove-project path="external/libdrm" name="platform/external/libdrm" />
   <project path="external/libdrm" name="mesa/drm" revision="master" remote="freedesktop" groups="default" />
-
-  <!-- Fixes -->
-  <remove-project path="frameworks/base" name="platform/frameworks/base" />
-  <project path="frameworks/base" name="android_frameworks_base" revision="marshmallow-dev" remote="github" groups="default" />
 
 </manifest>
